@@ -213,17 +213,25 @@
         </section>
 
         <!-- LIÊN HỆ -->
-        <section id="contact" class="section">
-            <div class="container contact-inner">
+        
+<!-- LIÊN HỆ -->
+<section id="contact" class="section">
+    <div class="container contact-inner">
 
-                <h2 class="section-title">Liên hệ</h2>
+        <h2 class="section-title">Liên hệ với tôi</h2>
 
-                <p class="section-sub">
-                    Mở cho các cơ hội thực tập &amp; việc làm Frontend.
-                </p>
+        <p class="section-sub">
+            Bạn có cơ hội hợp tác hoặc muốn trao đổi công việc?
+            Hãy gửi tin nhắn cho tôi nhé!
+        </p>
+
+        <div class="contact-wrapper">
+
+            <!-- Thông tin cá nhân -->
+            <div class="contact-info">
+                <h3>Thông tin liên hệ</h3>
 
                 <ul class="contact-list">
-
                     <li>
                         <span class="contact-label">Email</span>
                         <a href="mailto:trdaivi2911@gmail.com">
@@ -233,34 +241,79 @@
 
                     <li>
                         <span class="contact-label">GitHub</span>
-                        <a href="https://github.com/trandaivi" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/trandaivi"
+                           target="_blank"
+                           rel="noopener noreferrer">
                             github.com/trandaivi
                         </a>
                     </li>
 
                     <li>
                         <span class="contact-label">LinkedIn</span>
-                        <a href="https://linkedin.com/in/trandaivi" target="_blank" rel="noopener noreferrer">
+                        <a href="https://linkedin.com/in/trandaivi"
+                           target="_blank"
+                           rel="noopener noreferrer">
                             linkedin.com/in/trandaivi
                         </a>
                     </li>
-
                 </ul>
             </div>
-        </section>
 
-    </main>
+            <!-- Form liên hệ -->
+            <div class="contact-form-box">
+                <h3>Gửi tin nhắn cho tôi</h3>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="container footer-inner">
+                <form class="contact-form"
+                      action="#"
+                      method="post">
 
-            <p>© 2026 Trần Đại Vĩ. Thiết kế &amp; xây dựng bằng HTML5 + CSS3.</p>
+                    <div class="form-group">
+                        <label for="fullname">Họ và tên</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Nhập họ và tên của bạn"
+                            required>
+                    </div>
 
-            <a href="#top" class="to-top">↑ Lên đầu trang</a>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Nhập email của bạn"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Tiêu đề</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Nhập tiêu đề liên hệ"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Nội dung tin nhắn</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Nhập nội dung tin nhắn..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Gửi tin nhắn
+                    </button>
+
+                </form>
+            </div>
 
         </div>
-    </footer>
-
-</body>
-</html>
+    </div>
+</section>
